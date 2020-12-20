@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sect_weather {
+  display: flex;
+  min-height: 500px;
+  height: auto;
+  padding-bottom: 60px;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 1s;
+}
+
+.sect_weather .form_container {
+  height: 80px;
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input {
+  background: unset !important;
+  color: #fff;
+  box-shadow: unset;
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-right: 10px;
+  border: 1px solid #fff;
+  height: auto;
+  box-sizing: border-box;
+  width: 60%;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+
+.info {
+  width: 100%;
+  padding-top: 0;
+  transition: all 1s;
+  padding-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-top: 0;
+  padding-bottom: 10px;
+
+}
+
+ul li {
+  list-style-type: none;
+  color: #fff;
+  padding: 5px 0;
+
+}
+
+button {
+  width: 40%;
+  min-width: 150px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: none;
+  border-radius: 3px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  height: 40px;
+
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+#root {
+  background-image: url("assets/img/b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.info ul {
+  margin: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.delet {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 25px;
+  transition: 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    background: #fff;
+    border-radius: 3px;
+    color: #000;
+  }
+}
+
+.prognoz {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  color: #fff;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.detal {
+  color: #fff;
+}
+
+.dpro {
+  color: #fff;
+  width: 100%;
+  padding: 0 30px;
+  box-sizing: border-box;
+  padding-top: 0;
+  transition: all 1s;
+}
+
+.allcontainer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+
+
+  > div {
+
+    > ul {
+      padding: 0;
+    }
+  }
+}
+
+.detal__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.dates {
+  font-size: 20px;
+}
+
+.sect_weather__content {
+  width: 100%;
+  max-width: 1150px;
+  display: flex;
+  flex-direction: column;
+  background: #00000094;
+  border-radius: 10px;
+
+}
+.dates {
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+ul li {
+  list-style-type: none;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.detal__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+  .sect_weather {
+    padding-top: 0;
+  }
+
+  #root {
+    align-items: end;
+  }
+  button {
+    min-width: 100px;
+  }
+  .allcontainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+
+    > div {
+      min-width: 220px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  }
+}
+.dpro{
+  padding-top: 25px;
+  border-radius: 10px;
+}
+.back{
+  color: #fff;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+.info li{
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 450px) {
+  .info ul {
+    padding-bottom: 35px;
+      .prognoz{
+          left: 10px;
+          border-top: 1px solid #fff;
+          position: absolute;
+          bottom: 10px;
+          padding-top: 4px;
+          text-decoration: underline;
+      }
+  }
+}
+
