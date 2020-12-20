@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useSelector} from 'react-redux'
 
 const AllCity = () => {
     const ArrayCity = useSelector(state => state.ArrCity)
+    useEffect(()=>{
+        console.log('ArrayCity',ArrayCity)
+    },[ArrayCity])
 
     return (
         <ul className="info">
